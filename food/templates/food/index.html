@@ -5,13 +5,13 @@
         <div class="col-md-3 offset-md-2">
             <img class="card" height="150" width="250" src="{{ item.item_image }}">
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <h3>{{ item.item_name }}</h3>
             <h4>{{ item.item_desc }}</h4>
             <h5>₹{{ item.item_price }}</h5>
             <h6>{{ item.user_name }}</h6><br>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <br><a class="btn btn-secondary" href="{% url 'food:detail' item.id %}">Details</a>
         </div>
     </div>
